@@ -31,3 +31,10 @@ ul {
   border: 2px solid #375e97;
 }
 
+a {
+  color: #375e97;
+}
+
+a:hover {
+  text-decoration: none;
+}
