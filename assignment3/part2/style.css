@@ -58,3 +58,14 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
+
+    background-color: #f4f4f4;
+    padding: 20px;
+}
