@@ -51,3 +51,10 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
