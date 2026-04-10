@@ -30,13 +30,20 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+
+  let newStory = returnRandomStoryString();
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    // Formula for pounds to stone: 300 / 14 
+    const weight = Math.round(300 / 14) + " stone";
+    // Formula for Fahrenheit to Celsius: (94 - 32) * 5 / 9 
+    const temperature = Math.round((94 - 32) * 5 / 9) + " Celsius";
+
+
   }
 
   // TODO: replace "" with the correct expression
