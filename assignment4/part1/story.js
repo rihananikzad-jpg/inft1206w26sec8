@@ -43,6 +43,8 @@ function generateStory() {
     // Formula for Fahrenheit to Celsius: (94 - 32) * 5 / 9 
     const temperature = Math.round((94 - 32) * 5 / 9) + " Celsius";
 
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit", temperature);
 
   }
 
