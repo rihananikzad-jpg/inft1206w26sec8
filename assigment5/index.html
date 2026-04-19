@@ -1,0 +1,55 @@
+<!--
+Name: Raihana Nikzad
+	File: index.html
+	Date: 2026-04-18
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<header>
+  <h1>Accessibility Troubleshooting</h1>
+</header>
+
+<main>
+  <article>
+    <h2>The Story of the Giant Squid</h2>
+    <p>The giant squid is a deep-ocean dwelling squid. They can grow to a tremendous size!</p>
+    
+    <div class="video-container">
+        <div class="video-placeholder" role="img" aria-label="A video showing a giant squid swimming in the deep ocean">
+            <span>Video: Giant Squid in the Wild</span>
+        </div>
+        <p class="transcript">Transcript: The video shows a giant squid moving its tentacles slowly through dark blue water.</p>
+    </div>
+  </article>
+
+  <section class="form-container">
+    <h2>Join our Squid Fan Club</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit details</button>
+    </form>
+  </section>
+
+  <section class="comments">
+    <button class="toggle-comments" aria-expanded="false" aria-controls="comment-list">Show comments</button>
+    <ul id="comment-list" class="hidden">
+      <li><strong>User1:</strong> Squids are so cool!</li>
+      <li><strong>User2:</strong> I wish I could see one in real life.</li>
+    </ul>
+  </section>
+</main>
+
+<script src="main.js"></script>
